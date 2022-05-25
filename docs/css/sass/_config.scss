@@ -16,6 +16,8 @@ $color-background: #f6f6f9;
 $color-test-1: pink;
 $color-test-2: coral;
 
+$border-1: 1px solid $color-light;
+
 $card-border-radius: 2rem;
 $border-radius-1: 0.4rem;
 $border-radius-2: 0.8rem;
@@ -25,3 +27,5 @@ $card-padding: 1.8rem;
 $padding-1: 1.2rem;
 
 $box-shadow: 0 2rem 3rem $color-light;
+
+$transition-1: all 300ms ease;
