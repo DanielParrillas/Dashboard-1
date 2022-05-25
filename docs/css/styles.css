@@ -28,6 +28,7 @@ body {
       -ms-user-select: none;
           user-select: none;
   overflow-x: hidden;
+  color: #363949;
 }
 
 .container {
@@ -38,6 +39,75 @@ body {
   gap: 1.8rem;
   -ms-grid-columns: 14rem auto 23rem;
       grid-template-columns: 14rem auto 23rem;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+a {
+  color: #363949;
+}
+
+h1 {
+  font-weight: 800;
+  font-size: 1.8rem;
+}
+
+h2 {
+  font-size: 1.4rem;
+}
+
+h3 {
+  font-size: 0.87rem;
+}
+
+h4 {
+  font-size: 0.8rem;
+}
+
+h5 {
+  font-size: 0.77rem;
+}
+
+small {
+  font-size: 0.75rem;
+}
+
+.profile-photo {
+  width: 2.8rem;
+  height: 2.8rem;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.text-muted {
+  color: #7d8da1;
+}
+
+p {
+  color: #677483;
+}
+
+b {
+  color: #363949;
+}
+
+.primary {
+  color: #7380ec;
+}
+
+.danger {
+  color: #ff7782;
+}
+
+.succes {
+  color: #41f1b6;
+}
+
+.warning {
+  color: #ffbb55;
 }
 
 aside {
@@ -55,7 +125,6 @@ aside .top {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin-top: 1.4rem;
-  background: #fff;
 }
 
 aside .close {
@@ -161,71 +230,131 @@ aside h3 {
   height: 2rem;
 }
 
-img {
-  display: block;
-  width: 100%;
+main {
+  margin-top: 1.4rem;
 }
 
-a {
+main .date {
+  display: inline-block;
+  background-color: rgba(132, 139, 200, 0.18);
+  border-radius: 0.4rem;
+  margin-top: 1rem;
+  padding: 0.5rem 1.6rem;
+}
+
+main .date input[type="date"] {
+  background: transparent;
   color: #363949;
 }
 
-h1 {
-  font-weight: 800;
-  font-size: 1.8rem;
+main .insights {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  gap: 1.6rem;
 }
 
-h2 {
-  font-size: 1.4rem;
+main .insights > div {
+  background-color: #fff;
+  padding: 1.8rem;
+  border-radius: 2rem;
+  margin-top: 1rem;
+  -webkit-box-shadow: 0 2rem 3rem rgba(132, 139, 200, 0.18);
+          box-shadow: 0 2rem 3rem rgba(132, 139, 200, 0.18);
+  -webkit-transition: all 250ms ease-in-out;
+  transition: all 250ms ease-in-out;
 }
 
-h3 {
-  font-size: 0.87rem;
+main .insights > div:hover {
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
-h4 {
-  font-size: 0.8rem;
-}
-
-h5 {
-  font-size: 0.77rem;
-}
-
-small {
-  font-size: 0.75rem;
-}
-
-.profile-photo {
-  width: 2.8rem;
-  height: 2.8rem;
+main .insights > div span {
+  background-color: #7380ec;
+  padding: 0.5rem;
   border-radius: 50%;
-  overflow: hidden;
+  color: white;
+  font-size: 2rem;
 }
 
-.text-muted {
-  color: #7d8da1;
+main .insights > div.expenses span {
+  background-color: #ff7782;
 }
 
-p {
-  color: #677483;
+main .insights > div.income span {
+  background-color: #41f1b6;
 }
 
-b {
-  color: #363949;
+main .insights > div .middle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-.primary {
-  color: #7380ec;
+main .insights h3 {
+  margin: 1rem 0 0 0.6rem;
+  font-size: 1rem;
 }
 
-.danger {
-  color: #ff7782;
+main .insights .progress {
+  position: relative;
+  width: 92px;
+  height: 92px;
+  border-radius: 50%;
 }
 
-.succes {
-  color: #41f1b6;
+main .insights .progress .number {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.warning {
-  color: #ffbb55;
+main .insights svg {
+  width: 7rem;
+  height: 7rem;
+}
+
+main .insights svg circle {
+  fill: none;
+  stroke: #7380ec;
+  stroke-width: 14;
+  stroke-linecap: round;
+  -webkit-transform: translate(5px, 5px);
+          transform: translate(5px, 5px);
+  stroke-dasharray: 110;
+  stroke-dashoffset: 92;
+}
+
+main .insights .sales svg circle {
+  stroke-dasharray: 200;
+  stroke-dashoffset: -30;
+}
+
+main .insights .expenses svg circle {
+  stroke-dasharray: 200;
+  stroke-dashoffset: -30;
+}
+
+main .insights .income svg circle {
+  stroke-dasharray: 110;
+  stroke-dashoffset: 35;
 }
