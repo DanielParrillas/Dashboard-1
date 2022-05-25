@@ -96,28 +96,38 @@ main {
 
             circle {
                 fill: none;
-                stroke: $color-primary;
-                stroke-width: 14;
-                stroke-linecap: round;
                 transform: translate(5px, 5px);
-                stroke-dasharray: 110;
-                stroke-dashoffset: 92;
+                stroke: $color-primary;
+
+                stroke: {
+                    width: 14;
+                    linecap: round;
+                    dasharray: 110;
+                    dashoffset: 92;
+                }
             }
         }
 
         .sales svg circle {
-            stroke-dasharray: 200;
-            stroke-dashoffset: -30;
+            stroke: {
+                dasharray: 200;
+                dashoffset: -30;
+            }
         }
 
         .expenses svg circle {
-            stroke-dasharray: 200;
-            stroke-dashoffset: -30;
+            stroke: {
+                dasharray: 200;
+                dashoffset: -30;
+            }
         }
 
         .income svg circle {
-            stroke-dasharray: 110;
-            stroke-dashoffset: 35;
+            stroke: {
+                dasharray: 110;
+                dashoffset: 35;
+            }
+
             // End of Styles of circles
         }
 

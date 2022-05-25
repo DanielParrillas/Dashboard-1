@@ -335,11 +335,11 @@ main .insights svg {
 
 main .insights svg circle {
   fill: none;
+  -webkit-transform: translate(5px, 5px);
+          transform: translate(5px, 5px);
   stroke: #7380ec;
   stroke-width: 14;
   stroke-linecap: round;
-  -webkit-transform: translate(5px, 5px);
-          transform: translate(5px, 5px);
   stroke-dasharray: 110;
   stroke-dashoffset: 92;
 }
@@ -404,4 +404,104 @@ main table tbody td {
 
 main table tbody tr:last-child td {
   border: none;
+}
+
+.rigth {
+  margin-top: 1.4rem;
+}
+
+.rigth .top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 2rem;
+}
+
+.rigth .top #menu-btn {
+  display: none;
+}
+
+.rigth .top .profile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1rem;
+  text-align: right;
+}
+
+.rigth .theme-toggler {
+  background-color: rgba(132, 139, 200, 0.18);
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 1.6rem;
+  width: 4.2rem;
+  cursor: pointer;
+  border-radius: 0.4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.rigth .theme-toggler span {
+  font-size: 1.2rem;
+  width: 50%;
+  height: 100%;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.rigth .theme-toggler span.active {
+  background-color: #7380ec;
+  color: #fff;
+  border-radius: 0.4rem;
+}
+
+.rigth .recent-updates {
+  margin-top: 1rem;
+}
+
+.rigth .recent-updates h2 {
+  margin-bottom: 0.8rem;
+}
+
+.rigth .recent-updates .updates {
+  background-color: #fff;
+  padding: 1.8rem;
+  border-radius: 2rem;
+  -webkit-box-shadow: 0 2rem 3rem rgba(132, 139, 200, 0.18);
+          box-shadow: 0 2rem 3rem rgba(132, 139, 200, 0.18);
+  -webkit-transition: all 300ms ease;
+  transition: all 300ms ease;
+}
+
+.rigth .recent-updates .updates:hover {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.rigth .recent-updates .updates .update {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 2.6rem auto;
+      grid-template-columns: 2.6rem auto;
+  gap: 1rem;
+  margin-bottom: 1rem;
 }
