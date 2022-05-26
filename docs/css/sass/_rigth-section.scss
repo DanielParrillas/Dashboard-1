@@ -1,8 +1,9 @@
-//* ----------------  RIGHT SECTION ----------------
+//todo ----------------  RIGHT SECTION ----------------
 
 .rigth {
     margin-top: 1.4rem;
 
+    //* ---------------- Top ----------------
     .top {
         display: flex;
         justify-content: end;
@@ -20,9 +21,10 @@
             text-align: right;
         }
 
-        //End of top
+        // ---------------- End of Top ----------------
     }
 
+    //* ----------------  Toggler ----------------
     .theme-toggler {
         background-color: $color-light;
         justify-content: space-between;
@@ -49,9 +51,10 @@
             }
         }
 
-        //End of theme-toggler
+        // ----------------  Toggler ----------------
     }
 
+    //* ----------------  Recent Updates ----------------
     .recent-updates {
         margin-top: 1rem;
 
@@ -77,5 +80,85 @@
                 margin-bottom: 1rem;
             }
         }
+
+        // ---------------- End of Recent Updates ----------------
+    }
+
+    //* ---------------- Sales analytics ----------------
+    .sales-analytics {
+        margin-top: 2rem;
+        //background-color: $color-test-1;
+
+        h2 {
+            margin-bottom: 0.8rem;
+        }
+
+        .item {
+            background-color: $color-white;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 0.7rem;
+            padding: 1.4rem $card-padding;
+            border-radius: $border-radius-3;
+            box-shadow: $box-shadow;
+            transition: $transition-1;
+
+            &:hover {
+                box-shadow: none;
+            }
+
+            &.✅📶 .icon {
+                background-color: $color-primary;
+            }
+
+            &.❌📶 .icon {
+                background-color: $color-danger;
+            }
+
+            &.👤 .icon {
+                background-color: $color-success;
+            }
+
+            &.➕🛍️ {
+                background-color: transparent;
+                border: 2px dashed $color-primary;
+                color: $color-primary;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                div {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 0.6rem;
+
+                    h3 {
+                        font-weight: 600;
+                    }
+                }
+            }
+
+            .icon {
+                padding: 0.6rem;
+                color: $color-white;
+                border-radius: 50%;
+                background-color: $color-test-1;
+                display: flex;
+            }
+
+            .rigth {
+                display: flex;
+                justify-content: space-between;
+                align-items: start;
+                margin: 0;
+                width: 100%;
+            }
+        }
+
+        // ---------------- End of Sales analytics ----------------
     }
 }
+
+//? ---------------- END OF RIGHT SECTION ----------------
