@@ -1,5 +1,13 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
+:root {
+  --color-background: #f6f6f9;
+}
+
+.dark-theme-variables {
+  --color-background: #181a1e;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -233,6 +241,7 @@ aside h3 {
 
 main {
   margin-top: 1.4rem;
+  background-color: var(--color-background);
 }
 
 main .date {
